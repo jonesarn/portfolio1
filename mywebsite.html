@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid" style="background: rgba(0, 0, 0, 0.89);border:solid black;">
+                <ul class="nav navbar-nav" style="height: 100px 200px;">
+                    <li><a id="len2" class="hoverable" href="#">About</a></li>
+                    <li><a id="len3" class="hoverable" href="#">Portfolio</a></li>
+                    <li><a id="len4" class="hoverable" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            $(function() {
+                var str = '#len'; //increment by 1 up to 1-nelemnts
+                $(document).ready(function() {
+                    var i, stop;
+                    i = 1;
+                    stop = 4; //num elements
+                    setInterval(function() {
+                        if (i > stop) {
+                            return;
+                        }
+                        $('#len' + (i++)).toggleClass('bounce');
+                    }, 500)
+                });
+            });
+        </script>
+
+        <main id="main1">
+            <style>
+
+            </style>
+        </main>
+        <footer id="footer1">
+
+        </footer>
+</body>
+
+</html>
